@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DojotGatewayMobile"
+             x:Class="DojotGatewayMobile.MainPage">
+
+
+
+    <StackLayout VerticalOptions = "FillAndExpand">
+        <Label Text = "Endereço do dojot:" FontSize = "24" XAlign = "Center" YAlign = "Center"></Label>
+        <Entry FontSize = "18" x:Name="TxtDojot"></Entry>
+        <Label Text = "Usuário:" FontSize = "24" XAlign = "Center" YAlign = "Center"></Label>
+        <Entry FontSize = "18" x:Name="TxtUser"></Entry>
+        <Label Text = "Senha:" FontSize = "24" XAlign = "Center" YAlign = "Center"></Label>
+        <Entry FontSize = "18" IsPassword="true" x:Name="TxtPasswd"></Entry>
+        <StackLayout Orientation="Horizontal">
+            <Label Text = "Lembrar-me?" FontSize = "24" XAlign = "Center" YAlign = "Center"></Label>
+            <Switch x:Name="swRemember" IsToggled="False"></Switch>
+        </StackLayout>
+        <Button Text="OK" TextColor="White" BackgroundColor="RoyalBlue" FontSize = "18" x:Name="BtnStart" Clicked="OnButtonClicked">></Button>
+
+
+
+ 
+    </StackLayout>
+
+
+
+
+
+</ContentPage>
